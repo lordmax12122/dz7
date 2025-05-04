@@ -2,11 +2,11 @@
   "name": "dz7",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/lordmax12122/dz7#readme",
+  "homepage": "https://github.com/lordmax12122/dz7",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo": "npx parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /dz6",
+    "build": "parcel build src/index.html --public-url /dz7",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
@@ -21,11 +21,14 @@
     "url": "https://github.com/lordmax12122/dz7/issues"
   },
   "dependencies": {
-    "handlebars": "^4.7.8",
-    "parcel": "^2.14.4",
-    "parcel-plugin-handlebars-precompile": "^1.0.2"
+    "gh-pages": "^6.3.0",
+    "handlebars": "^4.7.8"
   },
   "devDependencies": {
+    "parcel": "^2.14.4",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "parcel-transformer-hbs": "^1.0.4",
     "posthtml-include": "^2.0.1"
   }
 }
